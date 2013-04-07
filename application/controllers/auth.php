@@ -11,6 +11,8 @@ class Auth extends CI_Controller
 		$this->load->library('security');
 		$this->load->library('tank_auth');
 		$this->lang->load('tank_auth');
+
+		$this->output->set_header("Content-Type: text/html; charset=UTF-8");
 	}
 
 	function index()
